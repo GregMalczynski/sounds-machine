@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrumMachine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<bg class='bg'>
+    <skin class="skin">
+        <inside class='skin_text'><b>Skin</b>Choice</inside>
+        <inside onclick='funcDark()' class='btn_dark'></inside>
+        <inside onclick='funcBright()' class='btn_bright'></inside>
+    </skin>
+    <content class='content'>
+        <left class='left'>
+            <header class='header'>Drum<b>Machine</b></header>
+                <pads class='pads'>
+                    <pad class='tom1'><span class='b'>Q</span> Tom1</pad>
+                    <pad class='tom2'><span class='b'>W</span> Tom2</pad>
+                    <pad class='voice'><span class='b'>E</span> Voice</pad>
+                    <pad class='hihatc'><span class='b'>A</span> Hi Closed</pad>
+                    <pad class='hihato'><span class='b'>S</span> Hi Open</pad>
+                    <pad class='crash'><span class='b'>D</span> Crash</pad>
+                    <pad class='drum'><span class='b' name='z'>Z</span> Drum</pad>
+                    <pad class='snare'><span class='b'>X</span> Snare</pad>
+                    <pad class='rimshot'><span class='b'>C</span> Rimshot</pad>
+                </pads>
+        </left>
+        <right class='right'>
+            <disp class='display'>
+                <inside class='pn_text'>play now : </inside>
+                <inside class='pn'></inside>
+            </disp>
+            <ins class='audio_text_cont'>
+                <inside class='audio_text'><b>Background</b> SampleLoop</inside>
+            </ins>
+            <div class='audio'>
+                <btn class='btn_play'>PLAY</btn>
+                <btn class='btn_stop'>STOP</btn>
+                <div class='display_audio'>
+                    <div class="container1">
+                        <div class='pn_text'>sample : </div>
+                        <div class='pn1'></div>
+                    </div>
+                    <div class="slideContainer">
+                        <div class="pitch">pitch -</div>
+                        <input type="range" min="0,5" max="1,5" value="value" class='slider' />
+                        <div class="pitch">pitch +</div>
+                    </div>
+                </div>
+            </div>
+            <img src='./images/cassette.png' class='cassette'>
+                <img src='./images/cassette_circle.png' class='circle1'></img>
+                <img src='./images/cassette_circle.png' class='circle2'></img>
+            </img>
+        </right>
+    </content>
+</bg>
+<script src='main.js'></script>
+</body>
+</html>
